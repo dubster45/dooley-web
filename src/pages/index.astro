@@ -1,11 +1,63 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout
+  title="Dooley Technology Solutions | Cloud, DevOps, and AI Infrastructure"
+  description="Dooley Technology Solutions helps businesses build, automate, secure, and troubleshoot cloud and DevOps infrastructure."
+>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Dooley Technology Solutions</div>
+
+      <h1>Cloud, DevOps, and AI Infrastructure Solutions</h1>
+
+      <p class="hero-text">
+        We help businesses design, automate, secure, and troubleshoot cloud infrastructure,
+        DevOps pipelines, Linux systems, Kubernetes platforms, and AI-ready environments.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="/contact/">Schedule a Consultation</a>
+        <a class="button secondary" href="/services/">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Practical infrastructure help for real business systems.</h2>
+      <p>
+        Dooley Technology Solutions focuses on the systems behind modern applications:
+        cloud platforms, automation, containers, monitoring, secure networking, and
+        production troubleshooting.
+      </p>
+
+      <div class="grid three" style="margin-top: 32px;">
+        <div class="card">
+          <h3>Cloud Infrastructure</h3>
+          <p>
+            AWS architecture, VPC design, routing, load balancers, security groups,
+            DNS, VPNs, and resilient cloud environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>DevOps Automation</h3>
+          <p>
+            Terraform, CI/CD pipelines, SaltStack, Linux automation, deployment workflows,
+            and repeatable infrastructure delivery.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI Infrastructure Readiness</h3>
+          <p>
+            Preparing cloud and DevOps environments for AI tools, automation platforms,
+            APIs, data movement, and secure integrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
